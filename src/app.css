@@ -20,6 +20,25 @@ This is where the vast majority of your CSS code goes. */
 The following CSS rule changes the font size of all Buttons that have the
 "-primary" class modifier.
 */
-Button.-primary {
+.btn {
+    /* background-color: blueviolet; */
     font-size: 18;
+    border-width: 1;
+    color: blueviolet;
+    width: 250;
+    padding: 5 10;
+    border-radius: 30%;
+    margin: 5 0;
+}
+StackLayout{
+    border-color: blue;
+    border-width: 8;
+}
+.form-control {
+    border-bottom-color: chartreuse;
+    border-bottom-width: 2;
+    margin: 5 0;
+    font-size: 20;
+    padding: 8 4;
+    
 }

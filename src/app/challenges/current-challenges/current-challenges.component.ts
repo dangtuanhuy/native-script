@@ -7,9 +7,19 @@ import { Component } from '@angular/core';
   moduleId: module.id
 })
 export class CurrentChallengesComponent {
-  challengeDescription = '';
-  currentChallenge = '';
-  onSetChallenge() {
-    this.currentChallenge = this.challengeDescription
+  challenges = [];
+  i = 1;
+
+  addChallenge(challenge: string) {
+      this.challenges.push({ id: this.i++, value: challenge });
+
+  }
+
+  onDelete(id: string) {
+      this.challenges = this.challenges.filter(challenge => challenge.id !== id);
+
+      if (this.challenges.length === 0) {
+          this.i = 1;
+      }
   }
 }

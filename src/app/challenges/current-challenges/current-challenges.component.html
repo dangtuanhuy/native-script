@@ -1,9 +1,9 @@
-
 <StackLayout>
-    <TextField hint="Challenge title" 
-    [(ngModel)]="challengeDescription" class="form-control">
-    </TextField>
-    <Button (tap)="onSetChallenge()" text="Set Challenge" class="btn"></Button>
-    <Label [text]="currentChallenge" fontsize="20">
-    </Label>
+    <TextField style="margin-top: 10%;" #challengeEl hint="Enter Challenge Title"></TextField>
+    <Button id="mainBtn" (tap)="addChallenge(challengeEl.text)" (tap)="challengeEl.text = ''" text="Set Challenge"></Button>
+    <WrapLayout *ngFor="let challenge of challenges">
+        <Label id="contentNumber" [text]="challenge.id + '. '"></Label>
+        <Label id="contentText" [text]="challenge.value"></Label>
+        <Button (tap)="onDelete(challenge.id)" text="x" id="deleteBtn"></Button>
+    </WrapLayout>
 </StackLayout>

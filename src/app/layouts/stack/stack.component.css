@@ -1,0 +1,22 @@
+/* Add mobile styles for the component here.  */
+Label {
+    background: red;
+    width: 50;
+    height: 50;
+}
+#i1 {
+    background: red;
+}
+#i2 {
+    background: blue;
+}
+#i3 {
+    background: greenyellow;
+}
+StackLayout {
+    border-color: burlywood;
+    border-width: 5;
+    padding:10 ;
+    height: 300;
+    
+}

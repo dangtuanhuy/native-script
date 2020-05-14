@@ -9,6 +9,12 @@ import { CurrentChallengesComponent } from './challenges/current-challenges/curr
 // Uncomment and add to NgModule imports if you need to use two-way binding
 import { NativeScriptFormsModule } from "nativescript-angular/forms";
 import { StackComponent } from './layouts/stack/stack.component';
+import { FlexboxComponent } from './layouts/flexbox/flexbox.component';
+import { GridComponent } from './layouts/grid/grid.component';
+import { AssignmentsComponent } from './assignments/assignments.component';
+import { GridAssignmentComponent } from './assignments/grid-assignment/grid-assignment.component';
+
+
 
 // Uncomment and add to NgModule imports if you need to use the HttpClient wrapper
 // import { NativeScriptHttpClientModule } from "nativescript-angular/http-client";
@@ -25,6 +31,11 @@ import { StackComponent } from './layouts/stack/stack.component';
         AppComponent,
         CurrentChallengesComponent,
         StackComponent,
+        FlexboxComponent,
+        GridComponent,
+        AssignmentsComponent,
+        GridAssignmentComponent,
+
     ],
     providers: [],
     schemas: [
